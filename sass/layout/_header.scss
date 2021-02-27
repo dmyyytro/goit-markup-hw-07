@@ -1,9 +1,9 @@
 .header {
   border: 1px solid #ececec;
-}
-.header .container {
-  display: flex;
-  align-items: center;
+  & .container {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .studio {
@@ -35,10 +35,9 @@
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
-}
-
-.contacts-list-item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .mail-icon {
@@ -46,9 +45,6 @@
   height: 12px;
   fill: var(--text-color);
   margin-right: 10px;
-}
-
-.mail-icon {
   cursor: pointer;
 }
 
@@ -57,8 +53,5 @@
   height: 16px;
   fill: var(--text-color);
   margin-right: 10px;
-}
-
-.tel-icon {
   cursor: pointer;
 }

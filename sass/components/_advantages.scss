@@ -77,14 +77,17 @@
 
 .advantages-list-item {
   width: 270px;
-}
-
-.advantages-list-item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .advantages-details {
   width: 270;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+
+  color: var(--text-color);
 }
 
 .advantages-name {
@@ -100,11 +103,4 @@
   text-transform: uppercase;
 
   color: var(--titles-color);
-}
-
-.advantages-details {
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-
-  color: var(--text-color);
 }
